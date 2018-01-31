@@ -24,6 +24,7 @@ function button_click3(){
 }
 
 function button_compute(){
+  table=[];
   var toto = document.getElementById("myNumber").value;
   console.log("Toto : "+toto);
   console.log("C'est partit :");
@@ -51,6 +52,12 @@ function button_compute(){
   button.innerText = table[2];
 }
 
+function mouseClicked(){
+  console.log("Hello");
+  show_target();
+  text("Hello",width/2,height/2);
+}
+
 
 function show_target(){
   var taille=window.innerWidth-window.innerWidth/20;
@@ -76,7 +83,5 @@ function show_target(){
 }
 
 function draw() {
-  show_target();
-  //background(0);
-  fill(0);
+  //show_target();
 }
