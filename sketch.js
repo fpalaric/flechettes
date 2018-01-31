@@ -34,13 +34,15 @@ function button_click1(){
 }
 
 function button_click2(){
-  var button = document.getElementById("button1");
+  var button = document.getElementById("button2");
   button.innerText = 'Button clicked !';
   text2="Button clicked !";
 }
 
 function button_compute(){
   var button = document.getElementById("button1");
+  button.innerText = 'Button clicked !';
+  var button = document.getElementById("button2");
   button.innerText = 'Button clicked !';
   text2="Button submit clicked !";
 }
