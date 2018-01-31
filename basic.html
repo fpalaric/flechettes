@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<html>
+
+
+<style>
+input[type=number], select {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 16px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 80%;
+}
+
+.button_compute {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 15%;
+  height: 40px;
+}
+
+.button_menu {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 15%;
+}
+
+.canvas{
+  margin-top: 45px;
+}
+
+#outer {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+</style>
+
+
+<head>
+  <script src="p5.js"></script>
+  <script src="p5.dom.js"></script>
+  <script src="sketch.js"></script>
+  <style> body {padding: 0; margin: 0;} </style>
+</head>
+<body>
+  <div id="outer">
+    <input type="number" id="myNumber" placeholder="Score ?" value="51" onsubmit="submit_click()"></input>
+    <button class="button_compute" id="go" onClick="button_compute()"></button>
+    <button class="button" id="button1" onClick="button_click1()">-</button>
+    <button class="button" id="button2" onClick="button_click2()">-</button>
+    <button class="button" id="button3" onClick="button_click3()">-</button>
+  </div>
+  <div id='myContainer' class="canvas"></div>
+  <div id="outer">
+    <a class="button_menu" href="menu.html">Menu</a>
+  </div>
+</body>
+</html>
