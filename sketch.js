@@ -27,27 +27,31 @@ function setup() {
 
 }
 
-function button_click(){
+function button_click1(){
   var button = document.getElementById("button1");
   button.innerText = 'Button clicked !';
   text2="Button clicked !";
 }
 
-function submit_click(){
-  text2="Submit clicked !";
+function button_click2(){
+  var button = document.getElementById("button1");
+  button.innerText = 'Button clicked !';
+  text2="Button clicked !";
 }
+
+function button_compute(){
+  var button = document.getElementById("button1");
+  button.innerText = 'Button clicked !';
+  text2="Button submit clicked !";
+}
+
 
 function show_target(){
   var taille=window.innerWidth-window.innerWidth/20;
   background(255);
   noFill()
   stroke(0);
-  if(temp==1){
-    var pas=taille/20;
-  }
-  if(temp==0){
-    taille/40
-  }
+  var pas=taille/20;
 
   ellipse(width/2,height/2,taille,taille);
   ellipse(width/2,height/2,taille-pas,taille-pas);
@@ -62,9 +66,8 @@ function show_target(){
 }
 
 function draw() {
-  //show_target();
-  background(0);
-  fill(255);
-  stroke(255);
+  show_target();
+  //background(0);
+  fill(0);
   text(text2,200,200);
 }
