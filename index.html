@@ -5,7 +5,7 @@
 
 <style>
 input[type=number], select {
-  width: 80%;
+  width: 70%;
   padding: 12px 20px;
   margin: 16px 0;
   display: inline-block;
@@ -26,6 +26,20 @@ input[type=number], select {
   margin: 4px 2px;
   cursor: pointer;
   width: 80%;
+}
+
+.button_compute {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 15%;
 }
 
 .canvas{
@@ -50,7 +64,9 @@ input[type=number], select {
   <div>
     <div id="outer">
       <input type="number" id="myNumber" placeholder="Score ?" value="51" onsubmit="submit_click()"></input>
-      <button class="button" id="button1" onClick="button_click()">on</button>
+      <button class="button_compute" id="go" onClick="button_compute()">Go</button>
+      <button class="button" id="button1" onClick="button_click1()">on</button>
+      <button class="button" id="button2" onClick="button_click2()">on</button>
     </div>
     <div id='myContainer' class="canvas"></div>
   </div>
