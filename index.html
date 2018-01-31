@@ -2,6 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 <html>
 
+<!--
 <style>
 input[type=number], select {
   width: 80%;
@@ -37,6 +38,7 @@ input[type=number], select {
   margin-bottom: 30px;
 }
 </style>
+-->
 
 <head>
   <script src="p5.js"></script>
@@ -47,8 +49,8 @@ input[type=number], select {
 <body>
   <div>
     <div id="outer">
-      <input type="number" id="myNumber" placeholder="Score ?" value="51" onsubmit="lock()"></input>
-      <button class="button" id="button1" onClick="change()">on</button>
+      <input type="number" id="myNumber" placeholder="Score ?" value="51" onsubmit="submit_click()"></input>
+      <button class="button" id="button1" onClick="button_click()">on</button>
     </div>
     <div id='myContainer' class="canvas"></div>
   </div>
