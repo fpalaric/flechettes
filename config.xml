@@ -7,6 +7,6 @@
 
 <!-- versionCode is optional and Android only -->
 
-  <name>Game of darts</name>
+  <name>The darts mate</name>
   <icon src="icon.png" />
 </widget>
