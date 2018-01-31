@@ -1,7 +1,7 @@
 var toto=17  ;
 var double=[32,16,20,50,2,4,6,8,10,12,14,18,20,22,24,26,28,30,34,36,38,40];
 var tout=[0,20,19,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,21,22,24,25,26,27,28,30,32,33,36,38,39,40,42,45,48,50,51,54,57,60];
-var text2="No clicks";
+var text2="No clicks yet";
 function setup() {
 
   var canvas = createCanvas(window.innerWidth, window.innerWidth);
