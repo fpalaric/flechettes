@@ -30,19 +30,27 @@ function setup() {
 function button_click1(){
   var button = document.getElementById("button1");
   button.innerText = 'Button clicked !';
-  text2="Button clicked !";
+  text2="Button clicked 1 !";
 }
 
 function button_click2(){
   var button = document.getElementById("button2");
   button.innerText = 'Button clicked !';
-  text2="Button clicked !";
+  text2="Button clicked 2 !";
+}
+
+function button_click3(){
+  var button = document.getElementById("button3");
+  button.innerText = 'Button clicked !';
+  text2="Button clicked 3 !";
 }
 
 function button_compute(){
   var button = document.getElementById("button1");
   button.innerText = 'Button clicked !';
   var button = document.getElementById("button2");
+  button.innerText = 'Button clicked !';
+  var button = document.getElementById("button3");
   button.innerText = 'Button clicked !';
   text2="Button submit clicked !";
 }
