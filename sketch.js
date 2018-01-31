@@ -7,7 +7,7 @@ function setup() {
   var canvas = createCanvas(window.innerWidth, window.innerWidth);
   //canvas.position(0,350);
   canvas.parent('myContainer');
-  textSize(32);
+  textSize(25);
   rectMode(CENTER);
   textAlign(CENTER,CENTER);
 }
